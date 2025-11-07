@@ -2,8 +2,9 @@ version: 1
 
 # Define static file headers, including cache-control
 static:
-  - path: "/**"
+  - path: "/index-copy"
     headers:
       referrer-policy: "no-referrer-when-downgrade"
+      cache-control: "public, max-age=86400" # Cache for 1 day
       # Add other custom headers here if needed
       # cache-control: "public, max-age=3600, stale-while-revalidate=60"
