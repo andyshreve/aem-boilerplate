@@ -1,0 +1,9 @@
+version: 1
+
+# Define static file headers, including cache-control
+static:
+  - path: "/**"
+    headers:
+      referrer-policy: "no-referrer-when-downgrade"
+      # Add other custom headers here if needed
+      # cache-control: "public, max-age=3600, stale-while-revalidate=60"
